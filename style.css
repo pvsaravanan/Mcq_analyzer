@@ -1,0 +1,27 @@
+/* FILE: style.css */
+
+/* --- MCQ Box Styles --- */
+#lmsGeminiAnswerBox {
+  /* Most styles are applied inline via JS in content.js */
+  /* Example: Define a base font if not set inline */
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* Optional: Style scrollbar within the MCQ answer box (WebKit browsers) */
+#lmsGeminiAnswerBox::-webkit-scrollbar {
+   width: 8px;
+ }
+#lmsGeminiAnswerBox::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+ }
+#lmsGeminiAnswerBox::-webkit-scrollbar-thumb {
+   background: #aeaeae; /* Lighter scrollbar */
+   border-radius: 10px;
+   border: 2px solid #f1f1f1; /* Add track color border */
+ }
+#lmsGeminiAnswerBox::-webkit-scrollbar-thumb:hover {
+   background: #888;
+ }
+
+/* Styles for programming panel elements removed as they are not used in this version */
