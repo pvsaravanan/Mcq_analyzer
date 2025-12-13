@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LMS Answer Box</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; min-width: 250px; }
+        h3 { color: #333; margin-top: 0; }
+        .setting-item { margin-bottom: 10px; display: flex; align-items: center; }
+        .setting-item label { margin-left: 8px; cursor: pointer; }
+        /* Basic styling for the toggle switch if you want a more modern look */
+        .switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s; border-radius: 20px; }
+        .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; -webkit-transition: .4s; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: #2196F3; }
+        input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
+        input:checked + .slider:before { -webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px); }
+    </style>
+</head>
+<body>
+    <h3>LMS Answer Box Settings</h3>
+
+    <div class="setting-item">
+        <label class="switch">
+            <input type="checkbox" id="autoClickNextToggle">
+            <span class="slider"></span>
+        </label>
+        <label for="autoClickNextToggle">Auto-click Next Question</label>
+    </div>
+
+    <div class="setting-item">
+        <label class="switch">
+            <input type="checkbox" id="showAnswerBoxToggle">
+            <span class="slider"></span>
+        </label>
+        <label for="showAnswerBoxToggle">Display Answer Box</label>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
