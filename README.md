@@ -10,6 +10,14 @@ A Chrome extension (Manifest V3) that detects multiple-choice questions on Savee
 - Optional: selects the suggested answer and clicks **Next** automatically
 - Popup switches to turn the answer box and auto-click on or off
 
+## Screenshots
+
+![Answer box with explanation on a quiz page](img/Modern%20LMS%20Quiz%20Interface%20with%20Explanation%20Popup.png)
+
+![Answer box with highlighted keywords](img/Modern%20Quiz%20Interface%20with%20Answer%20Explanation.png)
+
+![Answer box on a sustainability quiz](img/Sustainability%20Quiz%20Explanation%20UI.png)
+
 ## Files
 
 | File | Purpose |

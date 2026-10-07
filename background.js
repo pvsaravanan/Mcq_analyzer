@@ -5,7 +5,7 @@
 // --- Constants ---
 // WARNING: Storing the API key directly here is insecure for public distribution.
 const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
-const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 // --- Helper: API Error Parsing ---
 // Parses potential errors from the Gemini API response for better reporting.
