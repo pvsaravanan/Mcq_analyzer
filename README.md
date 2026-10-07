@@ -12,11 +12,11 @@ A Chrome extension (Manifest V3) that detects multiple-choice questions on Savee
 
 ## Screenshots
 
-![Answer box with explanation on a quiz page](img/Modern%20LMS%20Quiz%20Interface%20with%20Explanation%20Popup.png)
+![Answer box with explanation on a quiz page](img/Modern%20LMS%20Quiz%20Interface%20with%20Explanation%20Popup.jpg)
 
-![Answer box with highlighted keywords](img/Modern%20Quiz%20Interface%20with%20Answer%20Explanation.png)
+![Answer box with highlighted keywords](img/Modern%20Quiz%20Interface%20with%20Answer%20Explanation.jpg)
 
-![Answer box on a sustainability quiz](img/Sustainability%20Quiz%20Explanation%20UI.png)
+![Answer box on a sustainability quiz](img/Sustainability%20Quiz%20Explanation%20UI.jpg)
 
 ## Files
 
@@ -28,10 +28,19 @@ A Chrome extension (Manifest V3) that detects multiple-choice questions on Savee
 | `popup.html` / `popup.js` | Settings popup with the two switches |
 | `style.css` | Scrollbar styles for the answer box |
 
+## Getting a Gemini API key
+
+1. Go to [Google AI Studio](https://aistudio.google.com/) and sign in with your Google account.
+2. Open **Get API key** (in the left sidebar).
+3. Click **Create API key**, then choose or create a Google Cloud project.
+4. Copy the key that's generated.
+
+Keep the key private. Don't commit it or share it publicly.
+
 ## Installation
 
 1. Clone or download this repository.
-2. Set your Gemini API key in `GEMINI_API_KEY` at the top of `background.js`.
+2. In `background.js`, replace `YOUR_GEMINI_API_KEY` with your Gemini API key.
 3. Open `chrome://extensions` in Chrome.
 4. Turn on **Developer mode** (top right).
 5. Click **Load unpacked** and select this folder.
@@ -59,3 +68,7 @@ To add more sites, edit `content_scripts.matches` in `manifest.json` and reload 
 - AI answers can be wrong. Check them before relying on them.
 - Don't commit a real API key to a public repository.
 - Check your institution's academic integrity policy before using this on graded assessments.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
