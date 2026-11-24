@@ -69,6 +69,10 @@ To add more sites, edit `content_scripts.matches` in `manifest.json` and reload 
 - Don't commit a real API key to a public repository.
 - Check your institution's academic integrity policy before using this on graded assessments.
 
+## Claude skill
+
+The `skills/lms-browser-assistant` folder holds a Claude skill (v1.3) that works through LMS quizzes using Claude in Chrome. See its [README](skills/lms-browser-assistant/README.md) for install steps.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
